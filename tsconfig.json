@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "es6",                  
-    "module": "commonjs",           
+    "module": "ES6",           
     "outDir": "src/dist",               
     "rootDir": "./src",               
     "strict": true,                   
@@ -10,5 +10,5 @@
     "forceConsistentCasingInFileNames": true 
   },
   "include": ["src/index.ts"],        
-  "exclude": ["node_modules"]       
+  "exclude": ["node_modules","build"]       
 }
