@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { addToPlaylist, createPlaylist,deletePlaylist,deleteTrack,getPlaylists } from "../Controllers/playListcontroller";
+import { addToPlaylist, createPlaylist,deletePlaylist,deleteTrack,getPlaylists } from "../Controllers/playlistController";
 import { AuthMiddleware } from "../AuthMiddleware/authinter";
 
 
