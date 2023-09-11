@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.playlistRouter = void 0;
+const express_1 = require("express");
+const playListcontroller_1 = require("../Controllers/playListcontroller");
+const authinter_1 = require("../AuthMiddleware/authinter");
+exports.playlistRouter = (0, express_1.Router)();
+exports.playlistRouter.post('/newPlaylist', authinter_1.AuthMiddleware, playListcontroller_1.createPlaylist);
+exports.playlistRouter.delete('/:playlistId', playListcontroller_1.deletePlaylist);
+exports.playlistRouter.delete('/:playlistId/deletetrack/:songId', playListcontroller_1.deleteTrack);
+exports.playlistRouter.get('/:Userplaylists', authinter_1.AuthMiddleware, playListcontroller_1.getPlaylists);
+exports.playlistRouter.post('/addToPlaylist', authinter_1.AuthMiddleware, playListcontroller_1.addToPlaylist);
