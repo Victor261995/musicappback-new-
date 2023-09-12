@@ -11,7 +11,7 @@ import { playlistRouter } from "../src/Rutes/playlistRuter.ts";
 import {albumesSeed,albumesDelete} from'../src/Albumes/albunesSeed.ts';
 import{searchRouter}from'../src/Rutes/searchRoutes.ts';
 import albumRouter from'../src/Rutes/albumRoutes.ts';
-import'./AuthMiddleware/authinter';
+import'./AuthMiddleware/authinter.ts';
 import cookieParser from'cookie-parser'
 import { logoutUser } from "../src/Controllers/userController.ts";
 
