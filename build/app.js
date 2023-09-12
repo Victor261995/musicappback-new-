@@ -5,12 +5,12 @@ const port = process.env.PORT || 3001;
 
 import cors from "cors";
 import{followRouter}from"../src/Rutes/followRutes.ts"
-import { userRouter } from "../src/Rutes/userRutes";
+import { userRouter } from "../src/Rutes/userRutes.ts";
 import { PrismaClient } from "@prisma/client";
-import { playlistRouter } from "../src/Rutes/playlistRuter";
+import { playlistRouter } from "../src/Rutes/playlistRuter.ts";
 import {albumesSeed,albumesDelete} from'./Albumes/albunesSeed';
-import{searchRouter}from'../src/Rutes/searchRoutes';
-import albumRouter from'../src/Rutes/albumRoutes';
+import{searchRouter}from'../src/Rutes/searchRoutes.ts';
+import albumRouter from'../src/Rutes/albumRoutes.ts';
 import'./AuthMiddleware/authinter';
 import cookieParser from'cookie-parser'
 import { logoutUser } from "../src/Controllers/userController";
