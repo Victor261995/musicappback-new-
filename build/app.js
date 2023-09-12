@@ -8,12 +8,12 @@ import{followRouter}from"../src/Rutes/followRutes.ts"
 import { userRouter } from "../src/Rutes/userRutes.ts";
 import { PrismaClient } from "@prisma/client";
 import { playlistRouter } from "../src/Rutes/playlistRuter.ts";
-import {albumesSeed,albumesDelete} from'./Albumes/albunesSeed';
+import {albumesSeed,albumesDelete} from'../src/Albumes/albunesSeed.ts';
 import{searchRouter}from'../src/Rutes/searchRoutes.ts';
 import albumRouter from'../src/Rutes/albumRoutes.ts';
 import'./AuthMiddleware/authinter';
 import cookieParser from'cookie-parser'
-import { logoutUser } from "../src/Controllers/userController";
+import { logoutUser } from "../src/Controllers/userController.ts";
 
 const prisma= new PrismaClient();
 
