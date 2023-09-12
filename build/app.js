@@ -2,7 +2,7 @@ import express from "express";
 
 const port = process.env.PORT || 3001;
 
-import express from "express";
+
 import cors from "cors";
 import { followRouter } from "./Rutes/followRutes";
 import { userRouter } from "./Rutes/userRutes";
