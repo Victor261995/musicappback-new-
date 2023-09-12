@@ -4,7 +4,7 @@ const port = process.env.PORT || 3001;
 
 
 import cors from "cors";
-import { followRouter } from "./Rutes/followRutes";
+import{followRouter}from"../src/Rutes/followRutes"
 import { userRouter } from "./Rutes/userRutes";
 import { PrismaClient } from "@prisma/client";
 import { playlistRouter } from "./Rutes/playlistRuter";
