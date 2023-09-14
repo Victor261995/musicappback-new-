@@ -10,7 +10,7 @@
   "private": false,
   "scripts": {
     "build": "npm i && tsc",
-    "start": "node app.js",
+    "start": "node dist/app.js",
     "dev": "ts-node app.ts"
   },
   "dependencies": {
