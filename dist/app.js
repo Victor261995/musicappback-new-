@@ -27,10 +27,7 @@ const prisma = new client_1.PrismaClient();
 const app = (0, express_1.default)();
 const PORT = process.env.PORT || 2600;
 app.use(express_1.default.json());
-app.use((0, cors_1.default)({
-    credentials: true,
-    origin: 'http://localhost:3001',
-}));
+app.use((0, cors_1.default)({}));
 app.use("/users", userRutes_1.userRouter);
 app.use("/playList", playlistRuter_1.playlistRouter);
 app.use("/ArtistFollow", followRutes_1.followRouter);
