@@ -25,7 +25,7 @@ server.use(express.json());
  
   server.use(cors({
     credentials: true, 
-    origin: 'http://localhost:3001',
+    origin: 'https://fridal.vercel.app/',
   }));
 
 
