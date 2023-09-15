@@ -20,8 +20,7 @@ const PORT=process.env.PORT||2600
 app.use(express.json());
  
   app.use(cors({
-    credentials: true, 
-    origin: 'https://fridal.vercel.app/',
+   
   }));
 
 
